@@ -1,0 +1,14 @@
+<h1>ng If Else</h1>
+<label>Please enter your preferred partner : </label>
+
+<input type="text" (input)="fun($event)">
+<button (click)="gun()">Submit</button>
+
+<p *ngIf = "flag; else noname">{{str}}</p>
+<ng-template #noname>
+	<p>Please select partner: </p>
+	<p>1.Sanket</p>
+	<p>2.Devikesh</p>
+	<p>3.Omkar</p>
+	<p>4.Shivam</p>
+</ng-template>
