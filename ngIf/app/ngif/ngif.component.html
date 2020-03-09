@@ -1,0 +1,24 @@
+<h1>ng-If</h1>
+
+<h2 *ngIf="false">Pune</h2>
+
+<h2 *ngIf="true">Hey</h2>
+
+<!-- We can also perform if else partition-->
+<h2 *ngIf="flag; else OtherPart">Hello</h2>
+
+<ng-template #OtherPart>
+	<h2>Other Part</h2>
+</ng-template>
+
+<!--We can also use below syntax for if else-->
+<div *ngIf="flag; then ifblock; else elseblock"></div>
+
+<ng-template #ifblock>
+	<h2>If Part</h2>
+</ng-template>
+
+<ng-template #elseblock>
+	<h2>Else Part</h2>
+</ng-template>
+
