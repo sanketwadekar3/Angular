@@ -1,0 +1,12 @@
+<body>
+  <h1>
+    Firebase
+  </h1>
+<ul>
+  <li *ngFor="let item of items | async">
+    <pre>
+      {{item.key}} : {{item.payload.val()}}
+    </pre>
+  </li>
+</ul>
+</body>
